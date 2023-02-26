@@ -10,63 +10,73 @@
     android:layout_margin="10dp">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/bmi"/>
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/bmi"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/logo" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Age :"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:id="@+id/age"/>
+        android:text="@string/age"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your age "
+        android:hint="@string/enter_age"
         android:inputType="number"
-        android:textSize="20dp"/>
+        android:textSize="20sp"
+        android:id="@+id/age_id"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Height :"
-        android:textSize="25dp"
+        android:text="@string/height"
+        android:textSize="25sp"
         android:textStyle="bold"/>
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your Height(cm) "
-        android:textSize="20dp"
-        android:inputType="numberDecimal"/>
+        android:hint="@string/enter_height"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:id="@+id/height_id"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weight :"
-        android:textSize="25dp"
+        android:text="@string/weight"
+        android:textSize="25sp"
         android:textStyle="bold"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your Weight(kg) "
-        android:textSize="20dp"
-        android:inputType="numberDecimal"/>
+        android:hint="@string/enter_weight"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:id="@+id/weight_id"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
         android:clickable="true"
-        android:text="Male"
-        android:textSize="25dp"
+        android:text="@string/male"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <RadioButton
@@ -74,21 +84,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:text="Female"
-        android:textSize="25dp"
+        android:text="@string/female"
+        android:textSize="25sp"
         android:textStyle="bold" />
     </RadioGroup>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:text="@string/btn"
         android:textAllCaps="false"
         android:backgroundTint="@color/cardview_dark_background"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cal_btn"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/download" />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/cal_bmi"/>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="italic|bold" />
 
 </LinearLayout>
